@@ -1,0 +1,159 @@
+.above-the-fold {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 110px;
+}
+
+.atf-top {
+    display: flex;
+    align-items: center;
+}
+
+.atf-bottom {
+    display: flex;
+    margin-top: 240px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.name-and-profession {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+    p {
+        transform: rotate(-90deg);
+    }
+}
+
+.top-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-side {
+    >p {
+        width: 152px;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 76.8px;
+        text-wrap: nowrap;
+    }
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+
+    >h1 {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+    }
+
+    >h2 {
+        font-size: 58px;
+        font-weight: 400;
+        line-height: 69.6px;
+        color: #4B47FF;
+    }
+}
+
+.lets-talk-button {
+    position: absolute;
+    top: 520px;
+
+    >button {
+        border: unset;
+        text-decoration: none;
+        background-color: #00BEE8;
+        padding: 15px 30px 15px 30px;
+        border-radius: 10px;
+        color: white;
+        font-size: 23px;
+        line-height: 27.6px;
+        font-family: 'Poppins', sans-serif;
+
+        &:hover {
+            padding: 20px 40px 20px 40px;
+            background-color: #4B47FF;
+            cursor: pointer;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+    .blue-line {
+        width: 100px;
+        margin-left: -100px;
+    }
+}
+
+.social-media-logos {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    gap: 42px;
+
+    .logo {
+        height: 30px;
+        width: 30px;
+        &:hover {
+            height: 40px;
+            width: 41px;
+            background-repeat: no-repeat;
+            transition: ease-in-out 100ms;
+        }
+    }
+
+    #linkedin-logo {
+        background-image: url('../../assets/img/linkedIn-button.png');
+        &:hover {
+            background-image: url('../../assets/img/linkedIn-logo-hover.png');
+        }
+    }
+
+    #github-logo {
+        background-image: url('../../assets/img/github-logo.png');
+        &:hover {
+            background-image: url('../../assets/img/github-logo-hover.png');
+        }
+    }
+
+    #email-logo {
+        background-image: url('../../assets/img/email-logo.png');
+        &:hover {
+            background-image: url('../../assets/img/email-logo-hover.png');
+        }
+    }
+}
+
+#email-address {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 27.6px;
+    font-family: 'Poppins', sans-serif;
+    &:hover {
+        color: #00BEE8;
+        text-decoration: underline;
+    }
+}
+
+#scroll-down-image {
+    width: 28px;
+    height: 160px;
+    display: flex;
+}

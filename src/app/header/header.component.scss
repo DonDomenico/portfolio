@@ -1,0 +1,32 @@
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 100px 37px 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #141D2F;
+}
+
+.nav {
+    width: 100%;
+    max-width: 324px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 29px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+        &:hover {
+            color: #00BEE8;
+            transition: ease-in-out 100ms;
+            
+        }
+    }
+}
