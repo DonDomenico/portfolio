@@ -75,29 +75,6 @@
     }
 }
 
-.lets-talk-button {
-    position: absolute;
-    top: 480px;
-
-    >button {
-        border: unset;
-        text-decoration: none;
-        background-color: #00BEE8;
-        padding: 15px 30px 15px 30px;
-        border-radius: 10px;
-        color: white;
-        font-size: 23px;
-        line-height: 27.6px;
-        font-family: 'Poppins', sans-serif;
-
-        &:hover {
-            padding: 20px 40px 20px 40px;
-            background-color: #4B47FF;
-            cursor: pointer;
-        }
-    }
-}
-
 .contact {
     display: flex;
     align-items: center;

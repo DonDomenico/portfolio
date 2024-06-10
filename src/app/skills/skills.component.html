@@ -1,1 +1,18 @@
-<p>skills works!</p>
+<div class="skills">
+    <div class="left-side">
+        @for (icon of icons; track $index) {
+            <div class="skill">
+                <img src="{{ icon.source }}" alt="">
+                <p>{{ icon.text }}</p>
+            </div>
+        }
+    </div>
+    <div class="right-side">
+        <h1>My skills<img src="./assets/img/blue-line.png" alt=""></h1>
+        
+        <p>I have grown my frontend development skills that have<br>allowed me to create different real projects.</p>
+        <div class="contact-button">
+            <button class="get-in-touch-button">Get in touch</button>
+        </div>
+    </div>
+</div>
