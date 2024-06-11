@@ -13,6 +13,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -24,25 +25,41 @@ h1 {
     line-height: 108px;
 }
 
-.contact-button {
+.button {
+    border: unset;
+    text-decoration: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 23px;
+    line-height: 27.6px;
+    font-family: 'Poppins', sans-serif;
+
+    &:hover {
+        padding: 20px 40px 20px 40px;
+        background-color: #4B47FF;
+        cursor: pointer;
+    }
+}
+
+.button-container {
     height: 40px;
     margin-top: 60px;
+}
 
-    >button {
-        border: unset;
-        text-decoration: none;
+.contact-button {
+    background-color: #00BEE8;
+}
+
+.live-test-button {
+    background-color: #4B47FF;
+}
+
+.github-button {
+    border: 1px solid #00BEE8;
+    background-color: none;
+    &:hover {
         background-color: #00BEE8;
-        padding: 15px 30px 15px 30px;
-        border-radius: 10px;
-        color: white;
-        font-size: 23px;
-        line-height: 27.6px;
-        font-family: 'Poppins', sans-serif;
-
-        &:hover {
-            padding: 20px 40px 20px 40px;
-            background-color: #4B47FF;
-            cursor: pointer;
-        }
+        padding: 15px 30px;
     }
 }

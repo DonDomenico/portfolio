@@ -1,0 +1,80 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    margin-bottom: 100px;
+
+    .line-left, .line-right {
+        border: 2px solid #4B47FF;
+    }
+
+    .line-left {
+        width: 110px;
+    }
+
+    .line-right {
+        width: 37%;
+    }
+}
+
+.text {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    padding: 0 100px;
+    :nth-child(odd) {
+        justify-content: flex-start;
+    }
+
+    img {
+        width: 620px;
+        height: 340px;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+    }
+
+    .tools {
+        color: #00BEE8;
+        font-size: 23px;
+        line-height: 27.6px;
+    }
+
+    h3 {
+        color: #4B47FF;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .links {
+        display: flex;
+        gap: 86px;
+        height: 58px;
+
+        .live-test-button:hover {
+            padding: 15px 30px;
+            background-color: #00BEE8;
+        }
+
+        .github-button {
+            background-color: none;
+        }
+    }
+}

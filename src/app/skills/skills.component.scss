@@ -2,8 +2,8 @@
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
-    margin-bottom: 200px;
-    gap: 100px;
+    margin-bottom: 240px;
+    gap: 160px;
 }
 
 .left-side {
@@ -32,19 +32,26 @@
             line-height: 19px;
         }
     }
+
+    .background-skills-blue {
+        position: absolute;
+        left: 0;
+        z-index: -2;
+        margin-top: 140px;
+    }
 }
 
 .right-side {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 50%;
+    align-items: center;
+    width: 40%;
     gap: 34px;
-    justify-content: center;
 
     h1 {
         display: flex;
         align-items: center;
+        line-height: 80px;
 
         img {
             position: absolute;
@@ -55,10 +62,5 @@
 
     p {
         text-align: right;
-    }
-
-    .contact-button {
-        margin-top: 34px;
-        align-self: center;
     }
 } 

@@ -1,1 +1,32 @@
-<p>myportfolio works!</p>
+<div class="heading">
+    <p class="line-left"></p>
+    <h1>Portfolio</h1>
+    <p class="line-right"></p>
+</div>
+<p class="text" style="text-align: center;">Explore a selection of my work here - Interact with projects to see my skills in action</p>
+<div class="projects">
+    @for (project of projects; track $index) {
+        <div class="project">
+            <div class="left-side">
+                <img src="{{ project.img }}" alt="">
+            </div>
+            <div class="right-side">
+                <h3>{{ project.title }}</h3>
+                <div class="tools">
+                    @for (tool of project.tools; track $index) {
+                        @if ($index == project.tools.length - 1) {
+                            <span>{{ tool }}</span>
+                        } @else {
+                            <span>{{ tool }} | </span>
+                        }
+                    }
+                </div>
+                <p>{{ project.description }}</p>
+                <div class="links">
+                    <a class="live-test-button button" href="{{ project.liveTest }}">Live test</a>
+                    <a class="github-button button" href="{{ project.github }}">Github</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
