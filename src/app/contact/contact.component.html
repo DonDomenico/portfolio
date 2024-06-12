@@ -1,1 +1,39 @@
-<p>contact works!</p>
+<div class="contact">
+    <div class="heading">
+        <img src="./assets/img/blue-line-contact.png" alt="">
+        <h1>Contact</h1>
+    </div>
+
+    <div class="main">
+        <div class="left-side">
+            <h2>Got a problem to solve?</h2>
+            <p>Contact me through this form. I am interested in hearing from you,<br>
+            knowing your ideas and contributing to your projects with my work.</p>
+            <p>Need a frontend developer? <b>Contact me!</b></p>
+        </div>
+        <div class="right-side">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name" required>
+                @if (!name.valid && name.touched && !name.disabled) {
+                    <span>Please enter your name</span>
+                }
+
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                @if (!email.valid && email.touched && !email.disabled) {
+                    <span>Please enter a valid email-address</span>
+                }
+
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="Your message" style="height: 200px; resize: none;" required></textarea>
+                @if (!message.valid && message.touched && !message.disabled) {
+                    <span>Please enter a message</span>
+                }
+
+                <div class="privacy-checkbox">
+                    <input type="checkbox">
+                    <span>I've read the privacy policy and agree to the processing of my data as outlined.</span>
+                </div>
+                <input class="button" id="send-mail-button" type="submit" value="Send message">
+            </form>
+        </div>
+    </div>
+</div>

@@ -34,6 +34,7 @@ h1 {
     font-size: 23px;
     line-height: 27.6px;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 
     &:hover {
         padding: 20px 40px 20px 40px;
@@ -53,6 +54,7 @@ h1 {
 
 .live-test-button {
     background-color: #4B47FF;
+    min-width: 100px;
 }
 
 .github-button {

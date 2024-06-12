@@ -1,0 +1,97 @@
+.contact {
+    padding: 100px 100px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+
+    img {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.main {
+    display: flex;
+    margin-top: 100px;
+    gap: 80px;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+
+        input, textarea {
+            border: 1px solid #4B47FF;
+            border-radius: 10px;
+            background-color: #141D2F;
+            padding: 15px 25px;
+            color: white;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            line-height: 19px;
+            &:hover{
+                border-color: #00BEE8;
+            }
+        }
+
+        #send-mail-button {
+            background-color: #B6B6B6;
+            align-self: center;
+            border: unset;
+        }
+
+        .privacy-checkbox {
+            display: flex;
+        }
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   line-height: 19px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity:  1;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   line-height: 19px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   line-height: 19px;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   line-height: 19px;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   line-height: 19px;
+}
