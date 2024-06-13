@@ -1,3 +1,4 @@
+
 .contact {
     padding: 100px 100px;
 }
@@ -19,18 +20,23 @@
 }
 
 .left-side {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 40%;
 }
 
 .right-side {
-    width: 50%;
+    width: 60%;
+
     form {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 32px;
 
-        input, textarea {
+        input,
+        textarea {
             border: 1px solid #4B47FF;
             border-radius: 10px;
             background-color: #141D2F;
@@ -39,59 +45,93 @@
             font-size: 16px;
             font-family: 'Poppins', sans-serif;
             line-height: 19px;
-            &:hover{
+            width: 100%;
+
+            &:hover {
                 border-color: #00BEE8;
             }
+        }
+
+        input.ng-invalid, textarea.ng-invalid {
+            border-color: #E61C40;
+        }
+
+        input.ng-untouched, textarea.ng-untouched {
+            border-color: #4B47FF;
+        }
+
+        input.ng-valid, textarea.ng-valid {
+            border-color: #70E61C;
         }
 
         #send-mail-button {
             background-color: #B6B6B6;
             align-self: center;
             border: unset;
+            width: auto;
+        }
+
+        #send-mail-button.ng-valid {
+            background-color: #00BEE8;
         }
 
         .privacy-checkbox {
             display: flex;
+            gap: 8px;
+
+            input {
+                width: auto;
+            }
         }
     }
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 19px;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color: white;
-   opacity:  1;
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   line-height: 19px;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color: white;
-   opacity:  1;
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   line-height: 19px;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: white;
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   line-height: 19px;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: white;
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   line-height: 19px;
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
 }
 
-::placeholder { /* Most modern browsers support this now. */
-   color: white;
-   font-family: 'Poppins', sans-serif;
-   font-size: 16px;
-   line-height: 19px;
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
 }
