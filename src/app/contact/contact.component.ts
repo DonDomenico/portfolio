@@ -1,7 +1,7 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgStyle, NgTemplateOutlet } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, NgForm, NgModel, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -11,9 +11,12 @@ import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  colorDisabled = '#B6B6B6';
+  colorEnabled = '#00BEE8';
+  cursorEnabled = 'pointer';
+  cursorDisabled = 'not-allowed';
 
-  checkbox = true;
-
+  checkbox = false;
   http = inject(HttpClient)
 
   contactData = {
@@ -52,14 +55,23 @@ export class ContactComponent {
 
     //   NgForm.resetForm();
     // }
-    console.log('Test');
+    console.log(this.contactData);
+    NgForm.resetForm();
   }
 
   toggleCheckboxState() {
-    if(this.checkbox) {
-      this.checkbox = false;
-    } else {
+    if(!this.checkbox) {
       this.checkbox = true;
+    } else {
+      this.checkbox = false;
+    }
+  }
+
+  enableSubmitButton(email: NgModel, name: NgModel, message: NgModel) {
+    if(this.checkbox && email.valid && name.valid && message.valid) {
+      return false;
+    } else {
+      return true;
     }
   }
 }

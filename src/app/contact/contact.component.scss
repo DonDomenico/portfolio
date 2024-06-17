@@ -1,6 +1,9 @@
 
 .contact {
-    padding: 100px 100px;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 200px;
 }
 
 .heading {
@@ -26,65 +29,66 @@
     width: 40%;
 }
 
-.right-side {
+form {
+    display: flex;
+    flex-direction: column;
     width: 60%;
+    gap: 32px;
 
-    form {
-        display: flex;
-        flex-direction: column;
+    input,
+    textarea {
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        background-color: #141D2F;
+        padding: 15px 25px;
+        color: white;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 19px;
         width: 100%;
-        gap: 32px;
+        box-sizing: border-box;
 
-        input,
-        textarea {
-            border: 1px solid #4B47FF;
-            border-radius: 10px;
-            background-color: #141D2F;
-            padding: 15px 25px;
-            color: white;
-            font-size: 16px;
-            font-family: 'Poppins', sans-serif;
-            line-height: 19px;
-            width: 100%;
-
-            &:hover {
-                border-color: #00BEE8;
-            }
+        &:hover {
+            border-color: #00BEE8;
         }
+    }
 
-        input.ng-invalid, textarea.ng-invalid {
-            border-color: #E61C40;
-        }
+    input.ng-invalid, textarea.ng-invalid {
+        border-color: #E61C40;
+    }
 
-        input.ng-untouched, textarea.ng-untouched {
-            border-color: #4B47FF;
-        }
+    input.ng-untouched, textarea.ng-untouched {
+        border-color: #4B47FF;
+    }
 
-        input.ng-valid, textarea.ng-valid {
-            border-color: #70E61C;
-        }
+    input.ng-valid, textarea.ng-valid {
+        border-color: #70E61C;
+    }
 
-        #send-mail-button {
-            background-color: #B6B6B6;
-            align-self: center;
-            border: unset;
+    #send-mail-button {
+        align-self: center;
+        border: unset;
+        width: auto;
+    }
+
+    #send-mail-button.ng-valid:hover {
+        background-color: #141D2F;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .privacy-checkbox {
+        display: flex;
+        gap: 8px;
+
+        input {
             width: auto;
-        }
-
-        #send-mail-button.ng-valid {
-            background-color: #00BEE8;
-        }
-
-        .privacy-checkbox {
-            display: flex;
-            gap: 8px;
-
-            input {
-                width: auto;
-            }
         }
     }
 }
+
 
 ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */

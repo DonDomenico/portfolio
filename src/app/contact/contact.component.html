@@ -11,35 +11,34 @@
             knowing your ideas and contributing to your projects with my work.</p>
             <p>Need a frontend developer? <b>Contact me!</b></p>
         </div>
-        <div class="right-side">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div class="name-input">
-                    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name" required>
-                    @if (!name.valid && name.touched && !name.disabled) {
-                        <span class="error">Please enter your name</span>
-                    }
-                </div>
+        
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div class="name-input">
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="Your name" required>
+                @if (!name.valid && name.touched && !name.disabled) {
+                    <span class="error">Please enter your name</span>
+                }
+            </div>
 
-                <div class="mail-input">
-                    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
-                    @if (!email.valid && email.touched && !email.disabled) {
-                        <span class="error">Please enter a valid email-address</span>
-                    }
-                </div>
+            <div class="mail-input">
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                @if (!email.valid && email.touched && !email.disabled) {
+                    <span class="error">Please enter a valid email-address</span>
+                }
+            </div>
 
-                <div class="message-input">
-                    <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="Your message" style="height: 200px; resize: none;" required></textarea>
-                    @if (!message.valid && message.touched && !message.disabled) {
-                        <span class="error">Please enter a message</span>
-                    }
-                </div>
+            <div class="message-input">
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message" id="message" placeholder="Your message" style="height: 200px; resize: none;" required></textarea>
+                @if (!message.valid && message.touched && !message.disabled) {
+                    <span class="error">Please enter a message</span>
+                }
+            </div>
 
-                <div class="privacy-checkbox">
-                    <input (click)="toggleCheckboxState()" type="checkbox">
-                    <span>I've read the privacy policy and agree to the processing of my data as outlined.</span>
-                </div>
-                <input class="button" id="send-mail-button" type="submit" value="Send message" [disabled]="checkbox">
-            </form>
-        </div>
+            <div class="privacy-checkbox">
+                <input (click)="toggleCheckboxState()" type="checkbox">
+                <span>I've read the privacy policy and agree to the processing of my data as outlined.</span>
+            </div>
+            <input class="button" id="send-mail-button" type="submit" value="Send message" [disabled]="enableSubmitButton(email, name, message)" [ngStyle]="{'background-color': checkbox && name.valid && email.valid && message.valid ? colorEnabled : colorDisabled, 'cursor': checkbox && name.valid && email.valid && message.valid ? cursorEnabled : cursorDisabled}">
+        </form>
     </div>
 </div>

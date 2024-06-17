@@ -1,0 +1,62 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px;
+    border-top: 4px solid #00BEE8;
+}
+
+.left {
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: #00BEE8;
+            transition: all ease-in-out 125ms;
+        }
+    }
+}
+
+.right {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    gap: 42px;
+
+    .logo {
+        height: 30px;
+        width: 30px;
+
+        &:hover {
+            height: 40px;
+            width: 41px;
+            background-repeat: no-repeat;
+            transition: ease-in-out 100ms;
+        }
+    }
+
+    #linkedin-logo {
+        background-image: url('../../assets/img/linkedIn-button.png');
+
+        &:hover {
+            background-image: url('../../assets/img/linkedIn-logo-hover.png');
+        }
+    }
+
+    #github-logo {
+        background-image: url('../../assets/img/github-logo.png');
+
+        &:hover {
+            background-image: url('../../assets/img/github-logo-hover.png');
+        }
+    }
+
+    #email-logo {
+        background-image: url('../../assets/img/email-logo.png');
+
+        &:hover {
+            background-image: url('../../assets/img/email-logo-hover.png');
+        }
+    }
+}

@@ -20,7 +20,7 @@ p {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: clamp(44px, 20vw, 90px);
     font-weight: 700;
     line-height: 108px;
 }
@@ -60,6 +60,7 @@ h1 {
 .github-button {
     border: 1px solid #00BEE8;
     background-color: none;
+
     &:hover {
         background-color: #00BEE8;
         padding: 15px 30px;
