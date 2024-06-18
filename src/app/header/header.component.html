@@ -1,8 +1,12 @@
 <header>
     <h2>LOGO</h2>
     <div class="nav">
-        <a href="#aboutme">About me</a>
+        <a href="#aboutme">{{ 'about me' | translate }}</a>
         <a href="#skills">Skills</a>
         <a href="#myportfolio">Portfolio</a>
+        <div class="language">
+            <p (click)="translate.switchLanguage('de')">DE</p>
+            <p (click)="translate.switchLanguage('en')">EN</p>
+        </div>
     </div>
 </header>
