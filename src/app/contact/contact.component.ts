@@ -56,6 +56,7 @@ export class ContactComponent {
     //   NgForm.resetForm();
     // }
     console.log(this.contactData);
+    // user feedback hinzufügen, dass Nachricht versendet wurde
     NgForm.resetForm();
   }
 

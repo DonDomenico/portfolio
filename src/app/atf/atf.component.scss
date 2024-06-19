@@ -51,7 +51,7 @@
     >p {
         width: 152px;
         font-weight: 400;
-        font-size: 64px;
+        font-size: clamp(40px, 3.5vw, 64px);
         line-height: 76.8px;
         text-wrap: nowrap;
     }
@@ -62,8 +62,6 @@
     flex-direction: column;
 
     >h2 {
-        font-size: 58px;
-        font-weight: 400;
         line-height: 69.6px;
         color: #4B47FF;
     }
