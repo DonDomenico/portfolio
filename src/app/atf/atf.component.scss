@@ -35,10 +35,6 @@
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-
-    p {
-        transform: rotate(-90deg);
-    }
 }
 
 .top-side {
@@ -51,9 +47,10 @@
     >p {
         width: 152px;
         font-weight: 400;
-        font-size: clamp(40px, 3.5vw, 64px);
+        font-size: clamp(48px, 44.4px + 1.13vw, 66px);
         line-height: 76.8px;
         text-wrap: nowrap;
+        transform: rotate(-90deg);
     }
 }
 
@@ -88,6 +85,7 @@
     .logo {
         height: 30px;
         width: 30px;
+
         &:hover {
             height: 40px;
             width: 41px;
@@ -98,6 +96,7 @@
 
     #linkedin-logo {
         background-image: url('../../assets/img/linkedIn-button.png');
+
         &:hover {
             background-image: url('../../assets/img/linkedIn-logo-hover.png');
         }
@@ -105,6 +104,7 @@
 
     #github-logo {
         background-image: url('../../assets/img/github-logo.png');
+
         &:hover {
             background-image: url('../../assets/img/github-logo-hover.png');
         }
@@ -112,6 +112,7 @@
 
     #email-logo {
         background-image: url('../../assets/img/email-logo.png');
+
         &:hover {
             background-image: url('../../assets/img/email-logo-hover.png');
         }
@@ -124,6 +125,7 @@
     font-size: 23px;
     line-height: 27.6px;
     font-family: 'Poppins', sans-serif;
+
     &:hover {
         color: #00BEE8;
         text-decoration: underline;
@@ -134,4 +136,16 @@
     width: 28px;
     height: 160px;
     display: flex;
+}
+
+@media(max-width: 1500px) {
+    .atf-bottom {
+        margin-top: 132px;
+    }
+}
+
+@media(max-width: 1288px) {
+    .atf-bottom {
+        margin-top: 64px;
+    }
 }

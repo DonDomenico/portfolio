@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 160px;
+    gap: clamp(80px, 22.86px + 7.14vw, 160px);
     padding: 0 100px;
 
     .right-side {

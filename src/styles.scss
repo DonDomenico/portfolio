@@ -20,12 +20,16 @@ p {
 }
 
 h1 {
-    font-size: clamp(48px, 4vw, 90px);
+    // slope = 0,02625
+    // yAxisIntersection = 2,475
+    // preferredValue = 5,1 vw
+    font-size: clamp(3rem, 2.475rem + 2.6250vw, 90px);
     line-height: 108px;
 }
 
 h2 {
     font-size: clamp(32px, 3vw, 58px);
+    line-height: 70px;
 }
 
 .button {
