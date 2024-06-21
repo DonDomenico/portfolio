@@ -9,6 +9,9 @@
         <div class="project">
             <div class="left-side">
                 <img src="{{ project.img }}" alt="">
+                @if ($index == 1) {
+                    <img class="background-image" src="./assets/img/background-portfolio-mid.png" alt="">
+                }
             </div>
             <div class="right-side">
                 <h3>{{ project.title }}</h3>

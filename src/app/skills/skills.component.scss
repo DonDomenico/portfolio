@@ -8,7 +8,7 @@
 
 .left-side {
     display: flex;
-    gap: 40px 88px;
+    gap: 40px clamp(56px,21.22px + 3.48vw,88px);
     width: 45%;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,6 +38,7 @@
         left: 0;
         z-index: -2;
         margin-top: 140px;
+        opacity: 0.5;
     }
 }
 

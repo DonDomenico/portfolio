@@ -23,6 +23,7 @@
         width: 690px;
         height: 671px;
         z-index: -2;
+        opacity: 0.7;
     }
 }
 
@@ -142,14 +143,14 @@
     display: flex;
 }
 
-@media(max-width: 1458px) {
+@media(max-width: 1501px) {
     .atf-bottom {
-        margin-top: 132px;
+        margin-top: 148px;
     }
 }
 
-@media(max-width: 1213px) {
+@media(max-width: 1188px) {
     .atf-bottom {
-        margin-top: 64px;
+        margin-top: 88px;
     }
 }

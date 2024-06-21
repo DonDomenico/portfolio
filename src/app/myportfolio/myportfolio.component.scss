@@ -82,4 +82,12 @@
             background-color: none;
         }
     }
+
+    .background-image {
+        position: absolute;
+        width: 600px;
+        z-index: -2;
+        left: -200px;
+        opacity: 0.3;
+    }
 }

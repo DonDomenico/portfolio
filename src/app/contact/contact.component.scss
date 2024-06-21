@@ -1,8 +1,8 @@
 
 .contact {
     padding-top: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: clamp(60px, 16.52px + 4.35vw, 100px);
+    padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
     padding-bottom: 160px;
 }
 

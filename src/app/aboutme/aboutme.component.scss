@@ -1,6 +1,6 @@
 .about-me {
     margin-top: 120px;
-    margin-bottom: 200px;
+    margin-bottom: 160px;
     padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
     display: flex;
     justify-content: space-between;
@@ -42,6 +42,7 @@
         z-index: -2;
         right: 0;
         top: 880px;
+        opacity: 0.5;
     }
 
     #blue-line-aboutme {

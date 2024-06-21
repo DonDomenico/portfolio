@@ -4,6 +4,11 @@
     font-weight: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+}
+
 body {
     margin: 0;
     color: white;
@@ -20,10 +25,7 @@ p {
 }
 
 h1 {
-    // slope = 0,02625
-    // yAxisIntersection = 2,475
-    // preferredValue = 5,1 vw
-    font-size: clamp(3rem, 2.475rem + 2.6250vw, 90px);
+    font-size: clamp(60px, 5.65px + 5.43vw, 110px);
     line-height: clamp(80px, 49.57px + 3.04vw, 108px);
 }
 
