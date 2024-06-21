@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 37px 100px 37px 100px;
+    padding: 37px clamp(60px, 16.52px + 4.35vw, 100px);
     position: fixed;
     top: 0;
     z-index: 3;

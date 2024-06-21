@@ -1,8 +1,8 @@
 .skills {
     display: flex;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-bottom: 240px;
+    padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
+    padding-right: clamp(60px, 16.52px + 4.35vw, 100px);
+    margin-bottom: 200px;
     gap: 160px;
 }
 

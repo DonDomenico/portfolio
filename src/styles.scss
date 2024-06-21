@@ -24,12 +24,12 @@ h1 {
     // yAxisIntersection = 2,475
     // preferredValue = 5,1 vw
     font-size: clamp(3rem, 2.475rem + 2.6250vw, 90px);
-    line-height: 108px;
+    line-height: clamp(80px, 49.57px + 3.04vw, 108px);
 }
 
 h2 {
-    font-size: clamp(32px, 3vw, 58px);
-    line-height: 70px;
+    font-size: clamp(40px, 3vw, 58px);
+    line-height: clamp(54px, 36.61px + 1.74vw, 70px);
 }
 
 .button {

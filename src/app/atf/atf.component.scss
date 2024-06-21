@@ -3,14 +3,18 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: clamp(60px, 16.52px + 4.35vw, 100px);
+    padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
     padding-top: 110px;
 }
 
 .atf-top {
     display: flex;
     align-items: center;
+
+    .profile-image {
+        width: clamp(420px, 349.35px + 7.07vw, 485px);
+    }
 
     #background-image {
         position: absolute;
@@ -138,13 +142,13 @@
     display: flex;
 }
 
-@media(max-width: 1500px) {
+@media(max-width: 1458px) {
     .atf-bottom {
         margin-top: 132px;
     }
 }
 
-@media(max-width: 1288px) {
+@media(max-width: 1213px) {
     .atf-bottom {
         margin-top: 64px;
     }

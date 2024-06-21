@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 100px;
-    border-top: 4px solid #00BEE8;
+    padding: 60px clamp(60px, 16.52px + 4.35vw, 100px);
+    border-top: 2px solid #00BEE8;
 }
 
 .left {

@@ -1,7 +1,7 @@
 .about-me {
-    margin-top: 160px;
-    margin-bottom: 280px;
-    padding-left: 100px;
+    margin-top: 120px;
+    margin-bottom: 200px;
+    padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
     display: flex;
     justify-content: space-between;
 }
