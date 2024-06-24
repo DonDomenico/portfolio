@@ -10,5 +10,15 @@
     "portfolio text": "Explore a selection of my work here - Interact with projects to see my skills in action",
     "description project1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "description project2": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-    "description project3": "A simple library that provides and catalogues pokémon\ninformation based on the PokéAPI."
+    "description project3": "A simple library that provides and catalogues pokémon\ninformation based on the PokéAPI.",
+    "contact heading": "Contact",
+    "contact heading2": "Got a problem to solve?",
+    "contact p1": "Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "contact p2": "Need a frontend developer? Contact me!",
+    "form name": "Your name",
+    "form mail": "Your email",
+    "form message": "Your message",
+    "error name": "Please enter your name",
+    "error mail": "Please enter a valid e-mail address",
+    "error message": "Please enter a message"
 }
