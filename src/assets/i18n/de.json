@@ -1,4 +1,14 @@
 {
+    "about me nav": "Über mich",
+    "frontend developer": "FRONTEND ENTWICKLER",
+    "contact button": "Kontakt",
     "about me": "Über mich",
-    "frontend developer": "FRONTEND ENTWICKLER"
+    "about me text": "Ich bin ein Front-End-Entwickler aus Windeck, Deutschland. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler fortzusetzen und eine Stelle als Junior-Webentwickler zu finden. Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+    "skills": "Kenntnisse",
+    "skills text": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "get in touch": "Kontakt aufnehmen",
+    "portfolio text": "Entdecken Sie hier eine Auswahl meiner Arbeit -\nInteragieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
+    "description project1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "description project2": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "description project3": "Eine einfache Bibliothek, die Pokémon-Informationen basierend auf der PokéAPI bereitstellt und katalogisiert."
 }

@@ -3,24 +3,25 @@
     align-items: center;
     justify-content: flex-end;
     gap: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 
     .line-left, .line-right {
         border: 2px solid #4B47FF;
     }
 
     .line-left {
-        width: 110px;
+        width: clamp(20px, -1.96px + 5.78vw, 109px);
     }
 
     .line-right {
-        width: 37%;
+        width: clamp(75px, -69.35px + 37.99vw, 660px);
     }
 }
 
 .text {
     font-size: 16px;
     line-height: 19px;
+    white-space: pre-wrap;
 }
 
 .projects {
@@ -28,6 +29,7 @@
     flex-direction: column;
     margin: 100px 0;
     gap: 120px;
+    padding: 0 clamp(60px, 16.52px + 4.35vw, 100px);
 
     div.project:nth-child(even) {
         flex-direction: row-reverse;
@@ -43,7 +45,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: clamp(80px, 22.86px + 7.14vw, 160px);
-    padding: 0 clamp(60px, 16.52px + 4.35vw, 100px);
+    
 
     .right-side {
         display: flex;

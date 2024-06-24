@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../translation.service';
+import { HeaderComponent } from '../header/header.component';
+
 
 interface project {
   title: string;
   tools: string[];
-  description: string;
+  
   img: string;
   liveTest: string;
   github: string;
@@ -12,16 +16,19 @@ interface project {
 @Component({
   selector: 'app-myportfolio',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule, HeaderComponent],
   templateUrl: './myportfolio.component.html',
   styleUrl: './myportfolio.component.scss'
 })
 export class MyportfolioComponent {
+  translate = inject(TranslationService);
+  header = inject(HeaderComponent);
+
   projects: project[] = [
     {
       title: 'Join',
       tools: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-      description: 'Task manager inspired by the Kanban System. Create and organize\ntasks using drag and drop functions, assign users and categories.',
+      
       img: './assets/img/join-new.png',
       liveTest: 'https://dominik-grunow.developerakademie.net/join/',
       github: 'https://github.com/DonDomenico/join'
@@ -29,15 +36,15 @@ export class MyportfolioComponent {
     {
       title: 'El Pollo Loco',
       tools: ['JavaScript', 'HTML', 'CSS'],
-      description: 'Jump, run and throw game based on object-oriented approach.\nHelp the character Pepe to find coins and tabasco salsa to fight againt the crazy hen.',
+      
       img: './assets/img/pollo-loco-new.png',
       liveTest: 'https://dominik-grunow.developerakademie.net/pollo_loco/',
       github: 'https://github.com/DonDomenico/pollo-loco'
     },
     {
       title: 'Pokédex',
-      tools: ['JavaScript', 'HTML', 'CSS', 'Api'],
-      description: 'A simple library that provides and catalogues pokémon\ninformation based on the PokéAPI.',
+      tools: ['JavaScript', 'HTML', 'CSS', 'API'],
+      
       img: './assets/img/pokedex-new.png',
       liveTest: 'https://dominik-grunow.developerakademie.net/pokedex/index.html',
       github: 'https://github.com/DonDomenico/pokedex'

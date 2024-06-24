@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -20,5 +22,5 @@ export class SkillsComponent {
     {source: './assets/img/scrum-logo.png', text: 'Scrum'},
   ]
     
-  
+  translate = inject(TranslationService);
 }

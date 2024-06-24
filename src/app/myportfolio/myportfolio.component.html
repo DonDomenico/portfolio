@@ -1,35 +1,47 @@
-<div class="heading">
-    <p class="line-left"></p>
-    <h1>Portfolio</h1>
-    <p class="line-right"></p>
-</div>
-<p class="text" style="text-align: center;">Explore a selection of my work here - Interact with projects to see my skills in action</p>
-<div class="projects">
-    @for (project of projects; track $index) {
-        <div class="project">
-            <div class="left-side">
-                <img src="{{ project.img }}" alt="">
-                @if ($index == 1) {
-                    <img class="background-image" src="./assets/img/background-portfolio-mid.png" alt="">
-                }
-            </div>
-            <div class="right-side">
-                <h3>{{ project.title }}</h3>
-                <div class="tools">
-                    @for (tool of project.tools; track $index) {
-                        @if ($index == project.tools.length - 1) {
-                            <span>{{ tool }}</span>
-                        } @else {
-                            <span>{{ tool }} | </span>
-                        }
+<div id="portfolio">
+    <div class="heading">
+        <p class="line-left"></p>
+        <h1>Portfolio</h1>
+        <p class="line-right"></p>
+    </div>
+    <p class="text" style="text-align: center;">{{'portfolio text' | translate}}</p>
+    <div class="projects">
+        @for (project of projects; track $index) {
+            <div class="project">
+                <div class="left-side">
+                    <img src="{{ project.img }}" alt="">
+                    @if ($index == 1) {
+                        <img class="background-image" src="./assets/img/background-portfolio-mid.png" alt="">
                     }
                 </div>
-                <p>{{ project.description }}</p>
-                <section class="links">
-                    <a class="live-test-button button" href="{{ project.liveTest }}" target="_blank">Live test</a>
-                    <a class="github-button button" href="{{ project.github }}" target="_blank">Github</a>
-                </section>
+                <div class="right-side">
+                    <h3>{{ project.title }}</h3>
+                    <div class="tools">
+                        @for (tool of project.tools; track $index) {
+                            @if ($index == project.tools.length - 1) {
+                                <span>{{ tool }}</span>
+                            } @else {
+                                <span>{{ tool }} | </span>
+                            }
+                        }
+                    </div>
+                    @switch ($index) {
+                        @case (0) {
+                            <p>{{'description project1' | translate}}</p>
+                        }
+                        @case (1) {
+                            <p>{{'description project2' | translate}}</p>
+                        }
+                        @case (2) {
+                            <p>{{'description project3' | translate}}</p>
+                        }
+                    }
+                    <section class="links">
+                        <a class="live-test-button button" href="{{ project.liveTest }}" target="_blank">Live test</a>
+                        <a class="github-button button" href="{{ project.github }}" target="_blank">Github</a>
+                    </section>
+                </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 </div>

@@ -12,5 +12,16 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   translate = inject(TranslationService);
-  
+  languageGerman = true;
+  languageEnglish = false;
+
+  setLanguageGerman() {
+    this.languageGerman = true;
+    this.languageEnglish = false;
+  }
+
+  setLanguageEnglish() {
+    this.languageEnglish = true;
+    this.languageGerman = false;
+  }
 }
