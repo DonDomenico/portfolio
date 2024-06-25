@@ -1,6 +1,6 @@
 .above-the-fold {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-direction: column;
     padding-right: clamp(60px, 16.52px + 4.35vw, 100px);
@@ -29,7 +29,7 @@
 
 .atf-bottom {
     display: flex;
-    margin-top: 240px;
+    margin-bottom: -780px;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
@@ -50,9 +50,8 @@
 
 .left-side {
     >p {
-        width: 152px;
         font-weight: 400;
-        font-size: clamp(50px, 47.4px + 1.13vw, 70px);
+        font-size: clamp(32px,23.23px + 2.44vw,70px);
         line-height: 76.8px;
         text-wrap: nowrap;
         transform: rotate(-90deg);
@@ -64,8 +63,8 @@
     flex-direction: column;
 
     >h2 {
-        line-height: 69.6px;
         color: #4B47FF;
+        text-align: center;
     }
 }
 
@@ -143,14 +142,12 @@
     display: flex;
 }
 
-@media(max-width: 1501px) {
-    .atf-bottom {
-        margin-top: 148px;
+@media(max-width: 800px) {
+    .scroll-down-arrow {
+        display: none;
     }
-}
-
-@media(max-width: 1188px) {
-    .atf-bottom {
-        margin-top: 88px;
+    
+    #email-address {
+        display: none;
     }
 }

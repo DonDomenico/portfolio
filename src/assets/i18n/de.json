@@ -20,5 +20,9 @@
     "form message": "Nachricht",
     "error name": "Bitte geben Sie ihren Namen ein",
     "error mail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-    "error message": "Bitte geben Sie eine Nachricht ein"
+    "error message": "Bitte geben Sie eine Nachricht ein",
+    "privacy policy1": "Ich habe die ",
+    "privacy policy link": "Datenschutzbestimmungen ",
+    "privacy policy2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "submit button": "Senden"
 }

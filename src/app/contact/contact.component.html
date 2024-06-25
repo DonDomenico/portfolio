@@ -35,9 +35,9 @@
 
             <div class="privacy-checkbox">
                 <input (click)="toggleCheckboxState()" type="checkbox">
-                <span>I've read the privacy policy and agree to the processing of my data as outlined.</span>
+                <p>{{'privacy policy1' | translate}} <a href="">{{'privacy policy link' | translate}}</a>&nbsp;<span>{{'privacy policy2' | translate}}</span></p>
             </div>
-            <input class="button" id="send-mail-button" type="submit" value="Send message" [disabled]="enableSubmitButton(email, name, message)" [ngStyle]="{'background-color': checkbox && name.valid && email.valid && message.valid ? colorEnabled : colorDisabled, 'cursor': checkbox && name.valid && email.valid && message.valid ? cursorEnabled : cursorDisabled}">
+            <input class="button" id="send-mail-button" type="submit" value="{{'submit button' | translate}}" [disabled]="enableSubmitButton(email, name, message)" [ngStyle]="{'background-color': checkbox && name.valid && email.valid && message.valid ? colorEnabled : colorDisabled, 'cursor': checkbox && name.valid && email.valid && message.valid ? cursorEnabled : cursorDisabled}">
         </form>
     </div>
 </div>

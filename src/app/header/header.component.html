@@ -5,9 +5,23 @@
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <div class="language">
-            <p  (click)="translate.switchLanguage('de'); setLanguageGerman()">DE</p>
+            <p (click)="translate.switchLanguage('de'); setLanguageGerman()">DE</p>
             <p> | </p>
-            <p  (click)="translate.switchLanguage('en'); setLanguageEnglish()">EN</p>
+            <p (click)="translate.switchLanguage('en'); setLanguageEnglish()">EN</p>
+        </div>
+    </div>
+    <div class="language-mobile language">
+            <p (click)="translate.switchLanguage('de'); setLanguageGerman()">DE</p>
+            <p> | </p>
+            <p (click)="translate.switchLanguage('en'); setLanguageEnglish()">EN</p>
+    </div>
+    <span class="burger-menu-button" style="font-size:30px;cursor:pointer" (click)="toggleNav()">&#9776;</span>
+    <div id="burger-menu" class="burger-menu" [ngStyle]="navOpen ? {'display': 'flex'} : {'display': 'none'}">
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+        <div class="content">
+            <a href="#aboutme" (click)="closeNav()">{{ 'about me nav' | translate }}</a>
+            <a href="#skills" (click)="closeNav()">Skills</a>
+            <a href="#portfolio" (click)="closeNav()">Portfolio</a>
         </div>
     </div>
 </header>

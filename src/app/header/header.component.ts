@@ -14,6 +14,7 @@ export class HeaderComponent {
   translate = inject(TranslationService);
   languageGerman = true;
   languageEnglish = false;
+  navOpen: boolean = false;
 
   setLanguageGerman() {
     this.languageGerman = true;
@@ -24,4 +25,17 @@ export class HeaderComponent {
     this.languageEnglish = true;
     this.languageGerman = false;
   }
+
+  toggleNav() {
+    if(this.navOpen == false) {
+      this.navOpen = true;
+    } else {
+      this.navOpen = false;
+    }
+  }
+
+  closeNav() {
+    this.navOpen = false;
+  }
 }
+

@@ -83,8 +83,20 @@ form {
         display: flex;
         gap: 8px;
 
+        a {
+            text-decoration: none;
+            color: #4B47FF;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
         input {
             width: auto;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
