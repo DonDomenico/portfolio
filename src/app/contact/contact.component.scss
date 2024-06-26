@@ -1,8 +1,8 @@
 
 .contact {
     padding-top: 100px;
-    padding-right: clamp(60px, 16.52px + 4.35vw, 100px);
-    padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
+    padding-right: clamp(40px,28px + 3.75vw,100px);
+    padding-left: clamp(40px,28px + 3.75vw,100px);
     padding-bottom: 160px;
 }
 
@@ -98,6 +98,21 @@ form {
                 cursor: pointer;
             }
         }
+    }
+}
+
+@media(max-width: 800px) {
+    .main {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .left-side, form {
+        width: 100%;
+    }
+
+    .heading {
+        justify-content: center;
     }
 }
 

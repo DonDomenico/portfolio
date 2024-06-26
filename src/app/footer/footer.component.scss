@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px clamp(60px, 16.52px + 4.35vw, 100px);
+    padding: 60px clamp(40px,28px + 3.75vw,100px);
     border-top: 2px solid #00BEE8;
 }
 
@@ -22,6 +22,7 @@
     width: 200px;
     height: 40px;
     align-items: center;
+    justify-content: flex-end;
     gap: 42px;
 
     .logo {
@@ -57,6 +58,21 @@
 
         &:hover {
             background-image: url('../../assets/img/email-logo-hover.png');
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            text-align: center;
+        }
+
+        .right {
+            justify-content: center;
         }
     }
 }

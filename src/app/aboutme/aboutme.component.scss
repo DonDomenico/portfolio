@@ -1,7 +1,7 @@
 .about-me {
     margin-top: 120px;
     margin-bottom: 160px;
-    padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
+    padding-left: clamp(40px,24.71px + 3.92vw,100px);
     display: flex;
     justify-content: space-between;
 }
@@ -17,12 +17,16 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
-    padding-left: 20px;
 
     p {
         display: flex;
         align-items: flex-start;
         gap: 35px;
+    }
+
+    img {
+        width: clamp(34px,29.92px + 1.05vw,50px);
+        height: clamp(34px,29.92px + 1.05vw,50px);
     }
 }
 
@@ -48,5 +52,29 @@
     #blue-line-aboutme {
         width: clamp(60px, -288.33px + 29.03vw, 269px);
         height: 4px;
+    }
+}
+
+@media(max-width: 960px) {
+    .right-side {
+        display: none;
+    }
+
+    .about-me {
+        padding-right: clamp(40px,24.71px + 3.92vw,100px);
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .personal-things p {
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .personal-things p {
+        flex-direction: column;
     }
 }

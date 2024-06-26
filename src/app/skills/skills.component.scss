@@ -1,15 +1,15 @@
 .skills {
     display: flex;
-    padding-left: clamp(60px, 16.52px + 4.35vw, 100px);
-    padding-right: clamp(60px, 16.52px + 4.35vw, 100px);
+    padding-left: clamp(40px,24.71px + 3.92vw,100px);
+    padding-right: clamp(40px,24.71px + 3.92vw,100px);
     margin-bottom: 200px;
-    gap: 160px;
+    gap: clamp(100px,34.78px + 6.52vw,160px);
 }
 
 .left-side {
     display: flex;
-    gap: 40px clamp(56px,21.22px + 3.48vw,88px);
-    width: 45%;
+    gap: clamp(40px,29.8px + 2.61vw,80px) clamp(40px,29.8px + 2.61vw,80px);
+    width: 55%;
     flex-wrap: wrap;
     justify-content: space-between;
 
@@ -23,8 +23,8 @@
         height: 100px;
 
         img {
-            width: 60px;
-            height: 60px;
+            width: clamp(40px,34.9px + 1.31vw,60px);
+            height: clamp(40px,34.9px + 1.31vw,60px);
         }
 
         p {
@@ -68,4 +68,15 @@
     .button-container {
         margin-top: 32px;
     }
-} 
+}
+
+@media(max-width: 700px) {
+    .skills {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .right-side, .left-side {
+        width: 100%;
+    }
+}

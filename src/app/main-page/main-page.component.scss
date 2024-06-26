@@ -1,8 +1,14 @@
 .main-page {
     height: 100vh;
-    background-image: url('../../assets/img/Vector.png');
+    background-image: url('../../assets/img/vector_v2.png');
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 320px;
+    background-position-y: 400px;
     background-size: 100% 100%;
+}
+
+@media(max-width: 1400px) {
+    .main-page {
+        background-size: unset;
+    }
 }
