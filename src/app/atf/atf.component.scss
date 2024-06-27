@@ -5,7 +5,7 @@
     flex-direction: column;
     padding-right: clamp(40px,24.71px + 3.92vw,100px);
     padding-left: clamp(40px,24.71px + 3.92vw,100px);
-    padding-top: 110px;
+    padding-top: clamp(60px,-32.11px + 13.16vw,110px);
 }
 
 .atf-top {
@@ -167,5 +167,15 @@
 
     #background-image {
         display: none;
+    }
+}
+
+@media(max-height: 800px) {
+    #background-image {
+        height: 500px !important;
+    }
+
+    .atf-bottom {
+        margin-bottom: -600px;
     }
 }

@@ -1,20 +1,20 @@
 <div id="portfolio">
     <div class="heading">
-        <p class="line-left"></p>
-        <h1>Portfolio</h1>
-        <p class="line-right"></p>
+        <p class="line-left" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out"></p>
+        <h1 data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">Portfolio</h1>
+        <p class="line-right" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out"></p>
     </div>
-    <p class="text" style="text-align: center;">{{'portfolio text' | translate}}</p>
+    <p class="text" style="text-align: center;" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">{{'portfolio text' | translate}}</p>
     <div class="projects">
         @for (project of projects; track $index) {
             <div class="project">
-                <div class="left-side">
+                <div class="left-side" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
                     <img src="{{ project.img }}" alt="">
                     @if ($index == 1) {
                         <img class="background-image" src="./assets/img/background-portfolio-mid.png" alt="">
                     }
                 </div>
-                <div class="right-side">
+                <div class="right-side" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">
                     <h3>{{ project.title }}</h3>
                     <div class="tools">
                         @for (tool of project.tools; track $index) {

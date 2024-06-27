@@ -3,7 +3,7 @@
     background-image: url('../../assets/img/vector_v2.png');
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 400px;
+    background-position-y: clamp(280px,91.43px + 28.57vw,400px);
     background-size: 100% 100%;
 }
 

@@ -1,17 +1,17 @@
 <div class="contact" id="contact">
-    <div class="heading">
+    <div class="heading" >
         <img src="./assets/img/blue-line-contact.png" alt="">
-        <h1>{{'contact heading' | translate}}</h1>
+        <h1 data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">{{'contact heading' | translate}}</h1>
     </div>
 
     <div class="main">
-        <div class="left-side">
+        <div class="left-side" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
             <h2>{{'contact heading2' | translate}}</h2>
             <p>{{'contact p1' | translate}}</p>
             <p>{{'contact p2' | translate}}</p>
         </div>
         
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
             <div class="name-input">
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="{{'form name' | translate}}" required>
                 @if (!name.valid && name.touched && !name.disabled) {

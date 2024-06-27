@@ -2,8 +2,9 @@
     display: flex;
     padding-left: clamp(40px,24.71px + 3.92vw,100px);
     padding-right: clamp(40px,24.71px + 3.92vw,100px);
-    margin-bottom: 200px;
+    margin-bottom: clamp(160px,86.32px + 10.53vw,200px);
     gap: clamp(100px,34.78px + 6.52vw,160px);
+    overflow: hidden;
 }
 
 .left-side {
@@ -78,5 +79,11 @@
 
     .right-side, .left-side {
         width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    .background-skills-blue {
+        width: 300px;
     }
 }

@@ -1,9 +1,10 @@
 .about-me {
-    margin-top: 120px;
-    margin-bottom: 160px;
+    margin-top: clamp(80px,6.32px + 10.53vw,120px);
+    margin-bottom: clamp(120px,46.32px + 10.53vw,160px);
     padding-left: clamp(40px,24.71px + 3.92vw,100px);
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .left-side {
@@ -11,6 +12,10 @@
     flex-direction: column;
     gap: 35px;
     width: 40%;
+
+    h1 {
+        line-height: unset;
+    }
 }
 
 .personal-things {

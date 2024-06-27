@@ -1,7 +1,7 @@
 <div class="skills" id="skills">
     <div class="left-side">
         @for (icon of icons; track $index) {
-            <div class="skill">
+            <div class="skill" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
                 <img src="{{ icon.source }}" alt="">
                 <p>{{ icon.text }}</p>
             </div>
