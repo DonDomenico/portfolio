@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 37px clamp(20px,1.54px + 5.13vw,100px);
+    padding: 24px clamp(20px,1.54px + 5.13vw,100px);
     position: fixed;
     top: 0;
     z-index: 3;
@@ -9,11 +9,12 @@ header {
     height: 120px;
     box-sizing: border-box;
     background-color: #141D2F;
+    align-items: center;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+    width: 120px;
+    height: 80px;
 }
 
 .nav {

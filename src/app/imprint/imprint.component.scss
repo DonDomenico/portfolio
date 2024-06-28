@@ -1,0 +1,15 @@
+.impressum {
+    text-align: justify;
+    margin: 140px 40px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img:hover {
+        opacity: 0.7;
+        transition: ease-in-out;
+    }
+}

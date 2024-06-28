@@ -179,3 +179,9 @@
         margin-bottom: -600px;
     }
 }
+
+@media(width > 1920px) {
+    #background-image {
+        display: none;
+    }
+}
