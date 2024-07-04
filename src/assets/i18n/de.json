@@ -3,7 +3,9 @@
     "frontend developer": "FRONTEND ENTWICKLER",
     "contact button": "Kontakt",
     "about me": "Über mich",
-    "about me text": "Ich bin ein Front-End-Entwickler aus Windeck, Deutschland. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler fortzusetzen und eine Stelle als Junior-Webentwickler zu finden. Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+    "about me text": "Ich bin ein Front-End-Entwickler aus Windeck, Deutschland. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Karriere als Entwickler zu starten und eine Stelle als Webentwickler zu finden. Wenn Sie denken, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich gerne!",
+    "personal-thing1": "Ich beschäftige mich seit rund vier Jahren mit der Softwareentwicklung. Dank einer Webdeveloper-Weiterbildung bei der Developer Akademie, einer Umschulung zum Fachinformatiker für Anwendungsentwicklung sowie eigenständigem Lernen, konnte ich mir ein umfassendes Wissen in mehreren Programmiersprachen und Tools aneignen.",
+    "personal-thing2": "Das Erlernen neuer Technologien bereitet mir große Freude. Dies ermöglicht mir, mich stetig weiterzuentwickeln und immer auf dem Laufenden zu bleiben.",
     "skills text": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
     "get in touch": "Kontakt",
     "portfolio text": "Entdecken Sie hier eine Auswahl meiner Arbeit -\nInteragieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen",
@@ -21,7 +23,7 @@
     "error mail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
     "error message": "Bitte geben Sie eine Nachricht ein",
     "privacy policy1": "Ich habe die ",
-    "privacy policy link": "Datenschutzbestimmungen ",
+    "privacy policy link": "Datenschutzbestimmungen",
     "privacy policy2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
     "submit button": "Senden"
 }

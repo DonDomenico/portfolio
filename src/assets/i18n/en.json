@@ -3,7 +3,9 @@
     "frontend developer": "FRONTEND DEVELOPER",
     "contact button": "Let's talk!",
     "about me": "About me",
-    "about me text": "I am a Front-end developer based in Windeck, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position. If you think I’d be a good match for your projects, contact me!",
+    "about me text": "I am a front-end developer based in Windeck, Germany. I enjoy helping designers and companies turn their ideas into reality. I'm looking forward to starting my career as a developer and finding a job as a web developer. If you think I would be a good fit for your projects, feel free to contact me!",
+    "personal-thing1": "I have been learning software development for around four years. Thanks to a Web-Development Bootcamp at the Developer Akademie, a training as IT specialist for application development as well as self-study, I was able to acquire comprehensive knowledge in several programming languages and tools.",
+    "personal-thing2": "I really enjoy learning new technologies. This allows me to constantly develop and stay up to date.",
     "skills text": "I have gained experience in building projects with various front end technologies and concepts.",
     "get in touch": "Get in touch",
     "portfolio text": "Explore a selection of my work here - Interact with projects to see my skills in action",
@@ -21,7 +23,7 @@
     "error mail": "Please enter a valid e-mail address",
     "error message": "Please enter a message",
     "privacy policy1": "I've read the ",
-    "privacy policy link": "privacy policy ",
+    "privacy policy link": "privacy policy",
     "privacy policy2": "and agree to the processing of my data as outlined.",
     "submit button": "Send message"
 }

@@ -59,7 +59,7 @@ h2 {
 }
 
 .button-container {
-    height: 40px;
+    height: 48px;
     margin-top: 100px;
 }
 
@@ -78,6 +78,12 @@ h2 {
     &:hover {
         background-color: #00BEE8;
         padding: 15px 30px;
+    }
+}
+
+@media(max-width: 890px) {
+    .button {
+        font-size: 20px;
     }
 }
 

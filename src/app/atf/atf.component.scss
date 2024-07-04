@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding-right: clamp(40px,24.71px + 3.92vw,100px);
-    padding-left: clamp(40px,24.71px + 3.92vw,100px);
-    padding-top: clamp(60px,-32.11px + 13.16vw,110px);
+    padding-right: clamp(40px, 24.71px + 3.92vw, 100px);
+    padding-left: clamp(40px, 24.71px + 3.92vw, 100px);
+    padding-top: clamp(80px,73.08px + 1.92vw,110px);
 }
 
 .atf-top {
@@ -20,10 +20,19 @@
         position: absolute;
         top: 222px;
         left: 12px;
-        width: clamp(300px,222px + 24.38vw,690px);
-        height: clamp(500px,465.8px + 10.69vw,671px);
+        width: clamp(300px, 222px + 24.38vw, 690px);
+        height: clamp(500px, 465.8px + 10.69vw, 671px);
         z-index: -2;
         opacity: 0.7;
+    }
+
+    #background-image2 {
+        position: absolute;
+        right: 0;
+        top: 120px;
+        z-index: -2;
+        
+        height: clamp(500px, 465.8px + 10.69vw, 671px);
     }
 }
 
@@ -51,7 +60,7 @@
 .left-side {
     >p {
         font-weight: 400;
-        font-size: clamp(32px,23.23px + 2.44vw,70px);
+        font-size: clamp(32px, 23.23px + 2.44vw, 70px);
         line-height: 76.8px;
         text-wrap: nowrap;
         transform: rotate(-90deg);
@@ -150,7 +159,7 @@
     .scroll-down-arrow {
         display: none;
     }
-    
+
     #email-address {
         display: none;
     }
@@ -176,7 +185,7 @@
     }
 
     .atf-bottom {
-        margin-bottom: -600px;
+        margin-bottom: -656px;
     }
 }
 
