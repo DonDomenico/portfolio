@@ -20,7 +20,7 @@ export class ContactComponent {
   cursorDisabled = 'not-allowed';
 
   checkbox = false;
-  http = inject(HttpClient)
+  http = inject(HttpClient);
 
   contactData = {
     name: '',
@@ -28,10 +28,10 @@ export class ContactComponent {
     message: ''
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://dominik-grunow.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -42,23 +42,22 @@ export class ContactComponent {
   };
 
   onSubmit(NgForm: NgForm) {
-    // if (NgForm.submitted && NgForm.form.valid && !this.mailTest) {
-    //   this.http.post(this.post.endPoint, this.post.body(this.contactData))
-    //     .subscribe({
-    //       next: (response) => {
+    if (NgForm.submitted && NgForm.form.valid) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            NgForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (NgForm.submitted && NgForm.form.valid && this.mailTest) {
 
-    //         NgForm.resetForm();
-    //       },
-    //       error: (error) => {
-    //         console.error(error);
-    //       },
-    //       complete: () => console.info('send post complete'),
-    //     });
-    // } else if (NgForm.submitted && NgForm.form.valid && this.mailTest) {
-
-    //   NgForm.resetForm();
-    // }
-    console.log(this.contactData);
+      NgForm.resetForm();
+    }
+    
     // user feedback hinzufügen, dass Nachricht versendet wurde
     NgForm.resetForm();
   }

@@ -30,7 +30,7 @@ export class MyportfolioComponent {
       tools: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       
       img: './assets/img/join-new.png',
-      liveTest: 'https://dominik-grunow.developerakademie.net/join/',
+      liveTest: 'https://join.dominik-grunow.de',
       github: 'https://github.com/DonDomenico/join'
     },
     {
@@ -38,7 +38,7 @@ export class MyportfolioComponent {
       tools: ['JavaScript', 'HTML', 'CSS'],
       
       img: './assets/img/pollo-loco-new.png',
-      liveTest: 'https://dominik-grunow.developerakademie.net/pollo_loco/',
+      liveTest: 'https://el-pollo-loco.dominik-grunow.de',
       github: 'https://github.com/DonDomenico/pollo-loco'
     },
     {
@@ -46,7 +46,7 @@ export class MyportfolioComponent {
       tools: ['JavaScript', 'HTML', 'CSS', 'API'],
       
       img: './assets/img/pokedex-new.png',
-      liveTest: 'https://dominik-grunow.developerakademie.net/pokedex/index.html',
+      liveTest: 'https://pokedex.dominik-grunow.de',
       github: 'https://github.com/DonDomenico/pokedex'
     }
   ]
