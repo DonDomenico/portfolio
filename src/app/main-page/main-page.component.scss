@@ -21,12 +21,12 @@
 
 @media(height > 1080px) {
     .main-page {
-        height: 85vh;
+        height: 60vh;
     }
 }
 
-@media(max-height: 800px) {
+@media(max-height: 900px) {
     .main-page {
-        background-position-y: 400px;
+        background-position-y: 288px;
     }
 }

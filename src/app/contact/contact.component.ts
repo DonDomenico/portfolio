@@ -18,6 +18,7 @@ export class ContactComponent {
   colorEnabled = '#00BEE8';
   cursorEnabled = 'pointer';
   cursorDisabled = 'not-allowed';
+  submitted = false;
 
   checkbox = false;
   http = inject(HttpClient);
@@ -46,6 +47,10 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.submitted = true;
+            setTimeout(() => {
+              this.submitted = false;
+            }, 3000);
             NgForm.resetForm();
           },
           error: (error) => {
@@ -58,7 +63,6 @@ export class ContactComponent {
       NgForm.resetForm();
     }
     
-    // user feedback hinzufügen, dass Nachricht versendet wurde
     NgForm.resetForm();
   }
 

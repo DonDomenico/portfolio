@@ -38,6 +38,8 @@
                 <p class="privacy-policy">{{'privacy policy1' | translate}} <a href="privacy policy" target="_blank">{{'privacy policy link' | translate}}</a>&nbsp;<span>{{'privacy policy2' | translate}}</span></p>
             </div>
             <input class="button" id="send-mail-button" type="submit" value="{{'submit button' | translate}}" [disabled]="enableSubmitButton(email, name, message)" [ngStyle]="{'background-color': checkbox && name.valid && email.valid && message.valid ? colorEnabled : colorDisabled, 'cursor': checkbox && name.valid && email.valid && message.valid ? cursorEnabled : cursorDisabled}">
+        
+            <span class="success" [hidden]="!submitted">{{'message send' | translate}}</span>
         </form>
     </div>
 </div>

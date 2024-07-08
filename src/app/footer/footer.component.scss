@@ -36,38 +36,13 @@
     gap: 42px;
 
     .logo {
-        height: 30px;
-        width: 30px;
+        height: 32px;
+        width: 32px;
 
         &:hover {
-            height: 40px;
-            width: 41px;
+            transform: scale(1.2);
             background-repeat: no-repeat;
-            transition: ease-in-out 100ms;
-        }
-    }
-
-    #linkedin-logo {
-        background-image: url('../../assets/img/linkedIn-button.png');
-
-        &:hover {
-            background-image: url('../../assets/img/linkedIn-logo-hover.png');
-        }
-    }
-
-    #github-logo {
-        background-image: url('../../assets/img/github-logo.png');
-
-        &:hover {
-            background-image: url('../../assets/img/github-logo-hover.png');
-        }
-    }
-
-    #email-logo {
-        background-image: url('../../assets/img/email-logo.png');
-
-        &:hover {
-            background-image: url('../../assets/img/email-logo-hover.png');
+            transition: all ease-in-out 150ms;
         }
     }
 }
