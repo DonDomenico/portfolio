@@ -125,6 +125,12 @@ form {
     }
 }
 
+@media(width > 1920px) {
+    .heading img {
+        display: none;
+    }
+}
+
 
 ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
