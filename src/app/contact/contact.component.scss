@@ -1,6 +1,6 @@
 
 .contact {
-    padding-top: 100px;
+    padding-top: 40px;
     padding-right: clamp(40px,28px + 3.75vw,100px);
     padding-left: clamp(40px,28px + 3.75vw,100px);
     padding-bottom: 160px;
@@ -34,6 +34,17 @@ form {
     flex-direction: column;
     width: 60%;
     gap: 32px;
+
+    >div {
+        height: 56px;
+
+        &:nth-child(3){
+            height: 220px;
+        }
+        &:nth-child(4) {
+            height: auto;
+        }
+    }
 
     input,
     textarea {
@@ -88,15 +99,6 @@ form {
         display: flex;
         gap: 8px;
 
-        a {
-            text-decoration: none;
-            color: #4B47FF;
-            &:hover {
-                text-decoration: underline;
-                cursor: pointer;
-            }
-        }
-
         input {
             width: auto;
             &:hover {
@@ -114,6 +116,7 @@ form {
     .main {
         flex-direction: column;
         margin-top: 80px;
+        gap: 48px;
     }
 
     .left-side, form {
@@ -122,6 +125,21 @@ form {
 
     .heading {
         justify-content: center;
+    }
+}
+
+@media(max-width: 500px) {
+    form {
+        >div {
+            height: 76px;
+
+            &:nth-child(3){
+                height: 220px;
+            }
+            &:nth-child(4) {
+                height: auto;
+            }
+        }
     }
 }
 

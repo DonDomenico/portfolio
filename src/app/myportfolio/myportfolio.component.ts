@@ -3,7 +3,6 @@ import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
 import { HeaderComponent } from '../header/header.component';
 
-
 interface project {
   title: string;
   tools: string[];
@@ -16,19 +15,24 @@ interface project {
 @Component({
   selector: 'app-myportfolio',
   standalone: true,
-  imports: [TranslateModule, HeaderComponent],
+  imports: [TranslateModule],
   templateUrl: './myportfolio.component.html',
   styleUrl: './myportfolio.component.scss'
 })
 export class MyportfolioComponent {
   translate = inject(TranslationService);
-  header = inject(HeaderComponent);
 
   projects: project[] = [
     {
+      title: 'DABubble',
+      tools: ['Angular', 'SCSS', 'Firebase'],
+      img: '',
+      liveTest: 'https://da-bubble.dominik-grunow.de',
+      github: 'https://github.com/DonDomenico/dabubble'
+    },
+    {
       title: 'Join',
-      tools: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-      
+      tools: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
       img: './assets/img/join-new.png',
       liveTest: 'https://join.dominik-grunow.de',
       github: 'https://github.com/DonDomenico/join'
@@ -36,7 +40,6 @@ export class MyportfolioComponent {
     {
       title: 'El Pollo Loco',
       tools: ['JavaScript', 'HTML', 'CSS'],
-      
       img: './assets/img/pollo-loco-new.png',
       liveTest: 'https://el-pollo-loco.dominik-grunow.de',
       github: 'https://github.com/DonDomenico/pollo-loco'
@@ -44,7 +47,6 @@ export class MyportfolioComponent {
     {
       title: 'Pokédex',
       tools: ['JavaScript', 'HTML', 'CSS', 'API'],
-      
       img: './assets/img/pokedex-new.png',
       liveTest: 'https://pokedex.dominik-grunow.de',
       github: 'https://github.com/DonDomenico/pokedex'

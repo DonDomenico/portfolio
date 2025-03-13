@@ -34,6 +34,13 @@ h1 {
     line-height: clamp(54px,41.54px + 3.46vw,108px);
 }
 
+a {
+    color: rgb(65 183 183);
+    &:hover {
+        color: #00BEE8;
+    }
+}
+
 h2 {
     font-size: clamp(29px,22.31px + 1.86vw,58px);
     line-height: clamp(34.8px,26.68px + 2.26vw,70px);
@@ -44,7 +51,7 @@ h2 {
     text-decoration: none;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
-    color: white;
+    color: white !important;
     font-size: 23px;
     line-height: 27.6px;
     font-family: 'Poppins', sans-serif;
