@@ -23,7 +23,12 @@
             <a href="#aboutme" (click)="closeNav()">{{ 'about me nav' | translate }}</a>
             <a href="#skills" (click)="closeNav()">Skills</a>
             <a href="#portfolio" (click)="closeNav()">Portfolio</a>
-            <a href="#contact" (click)="closeNav()">Kontakt</a>
+            <a href="#contact" (click)="closeNav()">{{ 'contact nav' | translate }}</a>
+            <div class="language-burger-menu">
+                <p (click)="translate.switchLanguage('de'); setLanguageGerman()">DE</p>
+                <p> | </p>
+                <p (click)="translate.switchLanguage('en'); setLanguageEnglish()">EN</p>
+            </div>
         </div>
     </div>
 </header>

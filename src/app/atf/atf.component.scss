@@ -5,7 +5,7 @@
     flex-direction: column;
     padding-right: clamp(40px, 24.71px + 3.92vw, 100px);
     padding-left: clamp(40px, 24.71px + 3.92vw, 100px);
-    padding-top: clamp(80px,73.08px + 1.92vw,110px);
+    padding-top: clamp(80px, 73.08px + 1.92vw, 110px);
 }
 
 .atf-top {
@@ -31,17 +31,19 @@
         right: 0;
         top: 120px;
         z-index: -2;
-        
+
         height: clamp(500px, 465.8px + 10.69vw, 671px);
     }
 }
 
 .atf-bottom {
     display: flex;
-    margin-bottom: -780px;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
+    margin-right: 24px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .name-and-profession {
@@ -84,11 +86,12 @@
 .contact {
     display: flex;
     align-items: center;
-    gap: 42px;
+    gap: clamp(8px,0.62px + 2.05vw,40px);
 
     .blue-line {
         width: 100px;
-        margin-left: -100px;
+        position: relative;
+        left: clamp(-32px,-39.38px + 2.05vw,0px);
     }
 }
 

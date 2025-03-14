@@ -1,7 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 24px clamp(20px,1.54px + 5.13vw,100px);
+    padding: 24px clamp(20px, 1.54px + 5.13vw, 100px);
     position: fixed;
     top: 0;
     z-index: 3;
@@ -62,6 +62,29 @@ header {
 
     p {
         font-size: 23px;
+
+        &:hover {
+            color: #00BEE8;
+            transition: ease-in-out 100ms;
+            cursor: pointer;
+        }
+    }
+}
+
+.language-burger-menu {
+    display: none;
+    width: 72px;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
         &:hover {
             color: #00BEE8;
             transition: ease-in-out 100ms;
@@ -129,6 +152,16 @@ header {
     }
 
     .language-mobile {
+        display: flex;
+    }
+}
+
+@media(max-width: 560px) {
+    .language-mobile {
+        display: none;
+    }
+
+    .language-burger-menu {
         display: flex;
     }
 }
