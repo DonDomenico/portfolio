@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
-import { HeaderComponent } from '../header/header.component';
 
 interface project {
   title: string;
@@ -26,7 +25,7 @@ export class MyportfolioComponent {
     {
       title: 'DABubble',
       tools: ['Angular', 'SCSS', 'Firebase'],
-      img: '',
+      img: './assets/img/da_bubble.png',
       liveTest: 'https://da-bubble.dominik-grunow.de',
       github: 'https://github.com/DonDomenico/dabubble'
     },

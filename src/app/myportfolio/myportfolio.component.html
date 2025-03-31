@@ -9,7 +9,7 @@
         @for (project of projects; track $index) {
             <div class="project">
                 <div class="left-side" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out">
-                    <img src="{{ project.img }}" alt="">
+                    <img src="{{ project.img }}" alt="Picture of the project" style="height: max-content;">
                     @if ($index == 1) {
                         <img class="background-image" src="./assets/img/background-portfolio-mid.png" alt="">
                     }
@@ -36,7 +36,7 @@
                             <p>{{'description project3' | translate}}</p>
                         }
                         @case (3) {
-                            <p>{{ 'description project4' | translate}}</p>
+                            <p>{{'description project4' | translate}}</p>
                         }
                     }
                     <section class="links">
