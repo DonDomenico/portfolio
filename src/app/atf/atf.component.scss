@@ -155,13 +155,3 @@
         display: none;
     }
 }
-
-@media(max-height: 800px) {
-    #background-image {
-        height: 500px !important;
-    }
-
-    .atf-bottom {
-        margin-bottom: -580px;
-    }
-}
